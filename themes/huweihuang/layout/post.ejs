@@ -55,8 +55,10 @@ layout: layout
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
                 <% } %>
                 <!--分享-->
-                <br>                       
-                
+                <br> 
+                <!--加载valine-->                      
+                <%- partial('_partial/comments') %>
+                <!--加载valine-->                      
                 <!-- require APlayer -->
                 <% if(config['metingjs']) { %>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
@@ -124,7 +126,6 @@ layout: layout
                 <% } %>
 
             </div>
-            
             <!-- Tabe of Content -->
             <%- partial('_partial/toc') %>
                 

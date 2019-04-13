@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 胡伟煌 
+title: Chunming Liu 
 subtitle: 个人博客
-author: 胡伟煌
+author: Chunming Liu
 language:
 timezone:
 
@@ -21,7 +21,7 @@ permalink_defaults:
 #Custom Setting Start
 
 # Site settings
-SEOTitle: 胡伟煌 | Blog
+SEOTitle: Chunming Liu | Blog
 email: e-mail_address
 description: ""
 keyword: ""
@@ -55,7 +55,7 @@ nav_menu: [
 # RSS: false
 # weibo_username:     Demonbaneen
 # zhihu_username:     Demonbane
-github_username:    huweihuang
+github_username:   liuchunming033 
 # twitter_username:   Demonbane_x
 # facebook_username:  xxx
 # linkedin_username:  xxx
@@ -108,20 +108,10 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 ## Friends
 friends: [
     {
-        title: "CSDN Blog 胡伟煌",
-        href: "http://blog.csdn.net/huwh_"
+        title: "CSDN Blog 刘春明",
+        href: "http://blog.csdn.net/liuchunming033"
     },
-    {
-        title: "DockOne 胡伟煌",
-        href: "http://dockone.io/people/胡伟煌"
-    },
-    {
-        title: "阿里云栖社区 胡伟煌",
-        href: "https://yq.aliyun.com/u/huweihuang"
-    }
 ]
-
-
 #Custom Setting End
 
 
@@ -144,7 +134,7 @@ external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
-relative_link: false
+relative_link: true
 future: true
 highlight:
   enable: true
@@ -223,10 +213,10 @@ data-fixed: true
   # data-autoplay:    
 
 # Reward
-reward: false
+reward: true 
 reward_comment: 赞赏一下
-wechatpay: wechatpay_url
-alipay: alipay_url
+wechatpay: /img/pay/wechat_pay.png
+alipay: /img/pay/ali_pay.png #alipay_url
 
 
 # busuanzi
@@ -250,6 +240,6 @@ sitemap:
 # branch: master
 deploy:
   type: git
-  repository: https://github.com/huweihuang/hexo-theme-huweihuang
-  branch: gh-pages
+  repository: https://github.com/liuchunming033/liuchunming033.github.io.git
+  branch: master
   message: Update CNAME
