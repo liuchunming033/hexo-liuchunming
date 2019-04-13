@@ -51,6 +51,17 @@
                     <div class="site-heading">
                         <h1><%= page.title || config.title %></h1>
                         <!--<hr class="small">-->
+                        <!--刘春明添加的 今日诗词 开始-->
+                        <span id="jrsc"></span>
+                        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                        <script type="text/javascript">
+                            jinrishici.load(function (result) {
+                                console.log(result.data.content, result.data.origin.author, result.data.origin.dynasty);
+                                var string = result.data.content + "  ——" + result.data.origin.dynasty + "·" + result.data.origin.author;
+                                document.getElementById("jrsc").innerHTML = string;
+                            });
+                        </script>
+                        <!--刘春明添加的 今日诗词 结束-->
                         <span class="subheading"><%= page.description || config.subtitle || "" %></span>
                     </div>
                 <% } %>
