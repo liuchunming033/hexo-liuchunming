@@ -18,8 +18,6 @@ catagories:
 
 Hu Weihuang Blog : [www.huweihuang.com](http://www.huweihuang.com/)
 
-![Theme HuWeihuang](http://img.huweihuang.com/blog.jpg)
-
 # Install Hexo
 
 Install Node.js  and Git
