@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d3b89d4-e875-4450-af45-d88e4646f95a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/themes/huweihuang/source/css/valine.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.deploy_git" beforeDir="false" afterPath="$PROJECT_DIR$/.deploy_git" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/第一个程序.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/我的第一篇Hexo博文.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/huweihuang/layout/_partial/comments.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/huweihuang/layout/_partial/comments.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/huweihuang/layout/_partial/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/huweihuang/layout/_partial/head.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/huweihuang/layout/_partial/recommend_posts.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/huweihuang/layout/_partial/recommend_posts.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/huweihuang/layout/post.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/themes/huweihuang/layout/post.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,29 +24,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/recommend_posts.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/comments.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/huweihuang/_config.yml">
+        <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/recommend_posts.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="220">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -66,10 +52,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/huweihuang/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/post.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
+            <state relative-caret-position="5987">
+              <caret line="316" selection-start-line="316" selection-end-line="316" />
             </state>
           </provider>
         </entry>
@@ -84,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/head.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="858">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -95,7 +90,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="35">
-                <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+                <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -137,6 +132,7 @@
         <option value="$PROJECT_DIR$/themes/huweihuang/layout/post.ejs" />
         <option value="$PROJECT_DIR$/themes/huweihuang/source/css/valine.css" />
         <option value="$PROJECT_DIR$/themes/huweihuang/layout/_partial/head.ejs" />
+        <option value="$PROJECT_DIR$/themes/huweihuang/_config.yml" />
         <option value="$PROJECT_DIR$/themes/huweihuang/layout/_partial/comments.ejs" />
       </list>
     </option>
@@ -160,17 +156,6 @@
             <path>
               <item name="hexo-liuchunming033" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo-liuchunming033" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo-liuchunming033" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo-liuchunming033" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hexo-liuchunming033" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo-liuchunming033" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="validate-npm-package-license" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hexo-liuchunming033" type="b2602c69:ProjectViewProjectNode" />
@@ -216,14 +201,6 @@
               <item name="huweihuang" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hexo-liuchunming033" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hexo-liuchunming033" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="huweihuang" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -265,7 +242,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="23" width="1398" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981844" />
@@ -467,9 +443,29 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="35">
-            <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/validate-npm-package-license/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -482,23 +478,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/recommend_posts.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="40" />
+        <state relative-caret-position="220">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/validate-npm-package-license/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/huweihuang/_config.yml">
+    <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/post.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="5987">
+          <caret line="316" selection-start-line="316" selection-end-line="316" />
         </state>
       </provider>
     </entry>
@@ -509,29 +497,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/post.ejs">
+    <entry file="file://$PROJECT_DIR$/themes/huweihuang/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4281" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/huweihuang/layout/_partial/comments.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>

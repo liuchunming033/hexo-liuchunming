@@ -9,9 +9,11 @@
             visitor: true,
             appId: '<%=theme.valine.app_id %>',
             appKey: '<%=theme.valine.app_key %>',
-            placeholder: 'ヾﾉ≧∀≦)o发表你的高见吧!',
+            placeholder: 'ヾﾉ≧∀≦)o发表你的高见吧,留下邮箱可以接受回复提醒哦',
             avatar: 'mm',
-            pageSize: 10
+            pageSize: 10,
+            meta: ['nick','mail'],
+            notify: true
         })
     </script>
 <% } %>
