@@ -1,5 +1,5 @@
 ---
-title: "[Hexo] Theme HuWeihuang"
+title: "Theme HuWeihuang"
 catalog: true
 toc_nav_num: true
 date: 2017-09-18 10:51:24

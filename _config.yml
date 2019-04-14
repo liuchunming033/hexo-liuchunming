@@ -11,7 +11,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.huweihuang.com/       # Note: don't forget to modify the CNAME file to your url
+url: https://www.liuchunming.net/       # Note: don't forget to modify the CNAME file to your url
 root: /
 #permalink: :year/:month/:day/:title/
 permalink: :category/:title/
@@ -23,8 +23,8 @@ permalink_defaults:
 # Site settings
 SEOTitle: Chunming Liu | Blog
 email: e-mail_address
-description: ""
-keyword: ""
+description: "刘春明的博客"
+keyword: "测试开发，Python"
 header-img: /img/header_img/home.jpg
 article-img: /img/article_header/article_bg.jpg
 404-img: /img/header_img/404.png
@@ -42,8 +42,7 @@ nav_menu: [
     {
         title: "Archives",
         href: "/archive/"
-    }
-    ,
+    },
     {
         title: "Tags",
         href: "/tags/"
@@ -189,13 +188,13 @@ markdown:
 
 # recommended-posts
 # reference: https://github.com/huiwang/hexo-recommended-posts
-# recommended_posts:
-#   server: https://api.truelaurel.com #后端推荐服务器地址
-#   timeoutInMillis: 10000 #服务时长，超过此时长，则使用离线推荐模式
-#   internalLinks: 3 #内部文章数量
-#   externalLinks: 0 #外部文章数量
-#   autoDisplay: true, #自动在文章底部显示推荐文章
-#   titleHtml: <h2>推荐文章<span style="font-size:0.45em; color:gray"></span></h2> #自定义标题
+recommended_posts:
+  server: https://api.truelaurel.com #后端推荐服务器地址
+  timeoutInMillis: 10000 #服务时长，超过此时长，则使用离线推荐模式
+  internalLinks: 5 #内部文章数量
+  externalLinks: 0 #外部文章数量
+  autoDisplay: true, #自动在文章底部显示推荐文章
+  titleHtml: 相关文章 #自定义标题
 
 # hexo-tag-aplayer
 # reference: https://github.com/MoePlayer/hexo-tag-aplayer

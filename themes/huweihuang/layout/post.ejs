@@ -13,10 +13,11 @@ layout: layout
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
-
                 <%- page.content %>
-                
-
+                <!-- 相关文章 -->
+	           <% if(config['recommended_posts']) { %>
+		          <%- partial('_partial/recommend_posts', {page: page, site: site}) %>
+	           <% } %>
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
@@ -45,7 +46,6 @@ layout: layout
                     </div>
                 <% } %>
                 <!--打赏-->
-
                 <br>
                 <!--分享-->
                 <% if(config['share']) { %>
@@ -55,8 +55,9 @@ layout: layout
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
                 <% } %>
                 <!--分享-->
-                <br> 
-                <!--加载valine-->                      
+                <br>
+
+                <!--加载valine-->
                 <%- partial('_partial/comments') %>
                 <!--加载valine-->                      
                 <!-- require APlayer -->
