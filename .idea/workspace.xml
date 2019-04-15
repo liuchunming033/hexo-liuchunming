@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d3b89d4-e875-4450-af45-d88e4646f95a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.npminstall.done" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.npminstall.done" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
