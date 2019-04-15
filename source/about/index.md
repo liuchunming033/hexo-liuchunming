@@ -1,7 +1,7 @@
 ---
 layout: "about"
 title: "About"
-date: 2017-10-03 10:48:33
+date: 2019-04-15 10:48:33
 description: "走在成为极客的路上"
 header-img: "/img/header_img/about.jpg"
 aplayer: false 
@@ -24,15 +24,12 @@ fixed: false
 
 ### 参与社区
 
- > CSDN博客:http://blog.csdn.net/huwh_
+ > CSDN博客:httsp://blog.csdn.et/liuchunming033
  >
- > Github:https://github.com/huweihuang
+ > Github:https://github.com/liuchunming033
  >
- > 阿里云栖社区:https://yq.aliyun.com/u/huweihuang
- >
- > DockOne社区:http://dockone.io/people/胡伟煌
 
 ### 联系我
 
->Email: huweihuang@foxmail.com
+>Email: liuchunming033@163.com 
 

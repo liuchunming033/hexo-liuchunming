@@ -241,4 +241,3 @@ deploy:
   type: git
   repository: https://github.com/liuchunming033/liuchunming033.github.io.git
   branch: master
-  message: Update CNAME
