@@ -1,4 +1,4 @@
 public/
 .vscode
-.idea/
+.idea
 .deploy_git

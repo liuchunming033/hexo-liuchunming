@@ -7,6 +7,6 @@
 highlight_theme: normal
 
 valine:
-  enable: true
+  enable: false
   app_id: 1irHE3lmKdQ5E7rnMRPYubMP-gzGzoHsz 
   app_key: PX7Aiw7MRtFLGBsmTpGiT11M
