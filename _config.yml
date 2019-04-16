@@ -212,7 +212,7 @@ data-fixed: true
   # data-autoplay:    
 
 # Reward
-reward: true 
+reward: true
 reward_comment: 赞赏一下
 wechatpay: /img/pay/wechat_pay.png
 alipay: /img/pay/ali_pay.png #alipay_url
@@ -224,7 +224,7 @@ busuanzi: true
 
 # Share
 # Reference: https://github.com/overtrue/share.js
-share: true
+share: false
 
 ## Themes: https://hexo.io/themes/
 theme: huweihuang
