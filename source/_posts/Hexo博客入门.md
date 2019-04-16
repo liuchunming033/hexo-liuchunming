@@ -53,8 +53,10 @@ hexo server
 ## 创建一篇自己的博文
 ```shell
 hexo new "My New Post"
-``` 
+```
+
 这样将会在source/_posts/目录下创建一篇博文My-New-Post.md。打开这片文章，可以看到如下的内容：
+
 ```markdown
 
 ---
@@ -71,7 +73,7 @@ tags:
 
 ### 新建Github仓库
 在自己的Github主页右上角头像旁边,选择下拉菜单中的`New repository`，给新的仓库起名字必须按照这个格式：{github账号}.github.io。
-比如我的Github账号是liuchunming033，则我创建的用于部署博客的仓库名字就必须叫做liuchunming033.github.io
+比如我的Github账号是liuchunming033，则我创建的用于部署博客的仓库名字就必须叫做 liuchunming033.github.io
 
 ### 设置部署选项
 将本地的文件部署（上传）到Github账户中，编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码：
@@ -89,16 +91,19 @@ deploy:
 hexo clean && hexo generate
 hexo deploy
 ```
-这时候，在浏览器中打开http://liuchunming033.github.io网址，就可以看到你的博客站点了。是不是有点激动。
+这时候，在浏览器中打开[http://liuchunming033.github.io]()网址，就可以看到你的博客站点了。是不是有点激动。
 注意：`hexo deloy`依赖`hexo-deployer-git`包，需要事先通过npm安装它：
 `npm install hexo-deployer-git --save`
 以后我们新建博文准备发布的时候，只需要执行上面的命令就可以了。
 
 ### 配置HTTPS和自定义域名
-前面我们可以通过http://liuchunming033.github.io访问我们的博客站点了。如果你有自己的域名（没有的话可以去申请一个，不贵），一定会想将博客站点解析到你的域名上。下面我们就来操作。
+前面我们可以通过[https://liuchunming033.github.io]()访问我们的博客站点了。如果你有自己的域名（没有的话可以去申请一个，不贵），一定会想将博客站点解析到你的域名上。下面我们就来操作。
 在Github上打开存放博客的repository，在settings页面的GitHub Pages部分，填写上你的域名即可。强烈建议将`Enforce HTTPS`勾上，这样你的博客就可以通过HTTPS访问了。
 可以参考我的博客配置：
-![](./Hexo博客入门/github-pages.png)
+![](/img/article/github-pages.png)配置好repository之后，要到你的域名运营商那里，进行CNAME解析，将你的域名解析到 liuchunming033.github.io上，比如我的域名是在阿里云上注册的，在阿里云域名控制台上解析域名的方式如下图：
+![](/img/article/domain.jpeg)解析记录设置两个www和@，线路就默认就行了，CNAME记录值填你的github博客网址。如我的是 liuchunming033.github.io。接着你需要做的是在博客的根目录的source文件夹里创建CNAME文件，不带任何后缀，里面添加你的域名信息，如：liuchunming.net。
+
+这样你就可以在浏览器上通过https://liuchunming.net访问博客了。
 
 ## 个性化主题
 ### 更换主题模板

@@ -212,7 +212,7 @@ data-fixed: true
   # data-autoplay:    
 
 # Reward
-reward: true
+reward: false
 reward_comment: 赞赏一下
 wechatpay: /img/pay/wechat_pay.png
 alipay: /img/pay/ali_pay.png #alipay_url
