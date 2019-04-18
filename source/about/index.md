@@ -2,7 +2,7 @@
 layout: "about"
 title: "About"
 date: 2019-04-15 10:48:33
-description: "走在成为极客的路上"
+description: "不断改进软件测试方法"
 header-img: "/img/header_img/about.jpg"
 aplayer: false 
 fixed: false
@@ -10,26 +10,30 @@ fixed: false
 
 ### 一句话
 
->Just do it !    (翻译：我只是个搞 IT的！哭笑脸)
+> 在实践中提高，在交流中进步。
 
 ### 关于我
 
->一个莫名其妙的，喜欢敲代码，喜欢研究技术的，表面上高冷、不苟言笑的，
+>喜欢研究技术，也喜欢分享。
 >
->偶尔又嬉皮笑脸，偶尔又特立独行的，双重性格的技术爱好者！
+>在软件测试领域摸爬了快10年了，做过嵌入式、服务端、WEB端、APP端、性能以及测试框架和测试平台开发。
+>
+>希望写一些对大家有用的文字。
 
 ### 兴趣方向
 
-> 容器云（Docker、Kubernetes等）相关生态技术研究。
+> 引进新的技术，不断改进软件测试方法
 
 ### 参与社区
 
- > CSDN博客:httsp://blog.csdn.et/liuchunming033
+ > CSDN博客：httsp://blog.csdn.et/liuchunming033
  >
- > Github:https://github.com/liuchunming033
- >
+ > Github：https://github.com/liuchunming033
+ > 
+ > 2018全球架构师峰会：https://bj2018.archsummit.com/presentation/1330
 
 ### 联系我
 
 >Email: liuchunming033@163.com 
+
 
