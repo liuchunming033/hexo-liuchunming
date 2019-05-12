@@ -286,7 +286,7 @@ docker rm -f 1695ed10e2cb
 不带-f选项，只能删除处于非Up状态的容器，带上-f则可以删除处于任何状态下的容器。
 
 本小节，可以扩展一下Docker中容器状态的流转关系。请看下面这种图：
-![](/img/article/container-status.png)
+![](/img/article/container-status.jpg)
 这张图对容器的生命周期有了清晰的描述，总结了容器各种状态之间是如何转换的。
 
 需要注意一点是容器可以先创建容器，稍后再启动。 也就是可以先执行`docker create` 创建容器（处于 Created 状态），再通过`docker start` 以后台方式启动容器。 docker run 命令实际上是 docker create 和 docker start 的组合。
