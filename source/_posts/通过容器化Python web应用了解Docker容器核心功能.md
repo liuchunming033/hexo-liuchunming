@@ -130,15 +130,23 @@ curl localhost:5000
 ## 分享镜像 
 大家一定用过代码分享平台GitHub，在Docker世界中分享镜像的平台是[Docker Hub](https://hub.docker.com/)，它"学名"叫镜像仓库（Repository）。
 
-为了能够上传镜像，首先需要注册一个 Docker Hub 账号，然后使用 docker login 命令登录。在push到Docker Hub之前，需要先给镜像指定一个版本号：
+为了能够上传镜像，首先需要注册一个 Docker Hub 账号，然后使用 docker login 命令登录:
 ```text
-docker tag helloworld liuchunming033/helloworld:v1
+$ docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: liuchunming
+Password:
+Login Succeeded
 ```
-liuchunming033是我在Docker Hub 上的账户名。v1是我给这个镜像本次起的版本号。
+在push到Docker Hub之前，需要先给镜像指定一个版本号：
+```text
+docker tag helloworld liuchunming/helloworld:v1
+```
+liuchunming是我在Docker Hub 上的账户名。v1是我给这个镜像本次起的版本号。
 
 接着执行下面的指令就可以镜像push到Docker Hub上了：
 ```text
-docker push liuchunming033/helloworld:v1
+docker push liuchunming/helloworld:v1
 ```
 一旦提交到Docker Hub上，其他人就可以通过`docker pull helloworld:v1`指令将镜像下载下来了。
 
