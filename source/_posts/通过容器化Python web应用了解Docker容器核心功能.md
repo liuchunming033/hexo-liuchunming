@@ -148,7 +148,7 @@ liuchunming是我在Docker Hub 上的账户名。v1是我给这个镜像本次�
 ```text
 docker push liuchunming/helloworld:v1
 ```
-一旦提交到Docker Hub上，其他人就可以通过`docker pull helloworld:v1`指令将镜像下载下来了。
+一旦提交到Docker Hub上，其他人就可以通过`docker pull liuchunming/helloworld:v1`指令将镜像下载下来了。
 
 在企业内部，也可以搭建一个跟 Docker Hub 类似的镜像存储系统。感兴趣的话，可以查看VMware 的 Harbor 项目。
 
