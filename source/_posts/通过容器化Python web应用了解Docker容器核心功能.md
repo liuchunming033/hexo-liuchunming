@@ -1,5 +1,5 @@
 ---
-title: "通过Docker容器化Python web应用了解容器核心功能"
+title: "通过容器化Python web应用了解Docker容器核心功能"
 catalog: true
 toc_nav_num: true
 date: 2019-05-12 20:51:24
