@@ -176,6 +176,7 @@ PID   USER     TIME  COMMAND
 docker commit 1695ed10e2cb75e liuchunming033/helloworld:v2
 ```
 docker exec 的实现原理，其实是利用了容器的三大核心技术之一的Namespace。一个进程可以选择加入到某个进程（运行中的容器）已有的 Namespace 当中，从而达到“进入”这个进程所在容器的目的。更细节的原理这里不在细究。
+
 ## 容器与宿主机之间如何共享文件
 容器技术使用了 rootfs 机制和 Mount Namespace，构建出了一个同宿主机完全隔离开的文件系统环境。但是我们使用过程中经常会遇到这样两个问题：
 
@@ -251,5 +252,73 @@ docker run -it --cpu-period=100000 --cpu-quota=20000 -m 300M helloworld
 
 上面启动容器的命令，将容器使用的CPU限制设定在最高20%，内存使用最多是300MB。
 
+## 容器的启动、重启、停止与删除
+前面我们使用过`docker ps` 查看当前运行中的容器，如果加上 -a 选项，则可以查看运行中和已经停止的所有容器。现在，看一下我的系统中目前的所有容器：
+```text
+$ docker ps -a
+CONTAINER ID   IMAGE        COMMAND          CREATED      STATUS                 PORTS                  NAMES
+525a8c3fc769   helloworld   "python app.py"  4 hours ago  Up 3 minutes           80/tcp                 hardcore_feistel
+1695ed10e2cb   helloworld   "python app.py"  4 hours ago  Up 3 minutes           0.0.0.0:5000->80/tcp   focused_margulis7
+a242ecaf6cf6   helloworld   "python app.py"  5 hours ago  Exited (0) 4 hours ago                        dazzling_khayyam
+be0439b30b2a   helloworld   "python app.py"  5 hours ago  Created                                       vigilant_lalande
+```
+从输出中可以看到目前有四个容器，有两个容器处于Up状态，也就是处于运行中的状态，一个容器处于Exited(0)状态，也就是退出状态，一个处于Created状态。
+
+这里补充说明一下docker ps -a的输出结果，一共包含7列数据，分别是 CONTAINER ID、IMAGE、COMMAND、CREATED、STATUS、PORTS和NAMES。 这些列的含义分别如下所示： 
+- CONTAINER ID：容器ID，唯一标识容器 
+- IMAGE：创建容器时所用的镜像 
+- COMMAND：在容器最后运行的命令 
+- CREATED：容器创建的时间 
+- STATUS：容器的状态 
+- PORTS：对外开放的端口号 
+- NAMES：容器名（具有唯一性，docker负责命名） 
+获取到容器的ID之后，可以对容器的状态进行修改，比如容器1695ed10e2cb进行停止、启动、重启：
+```text
+docker stop 1695ed10e2cb
+docker start 1695ed10e2cb
+docker restart 1695ed10e2cb
+```
+删除容器，有两种操作：
+```text
+docker rm 1695ed10e2cb
+docker rm -f 1695ed10e2cb
+```
+不带-f选项，只能删除处于非Up状态的容器，带上-f则可以删除处于任何状态下的容器。
+
+本小节，可以扩展一下Docker中容器状态的流转关系。请看下面这种图：
+![](/img/article/container-status.png)
+这张图对容器的生命周期有了清晰的描述，总结了容器各种状态之间是如何转换的。
+
+需要注意一点是容器可以先创建容器，稍后再启动。 也就是可以先执行`docker create` 创建容器（处于 Created 状态），再通过`docker start` 以后台方式启动容器。 docker run 命令实际上是 docker create 和 docker start 的组合。
+
+## 维持容器始终保持运行状态
+
+docker run指令有一个参数`--restart`，在容器中启动的进程正常退出或发生OOM时， docker 会根据 --restart 的策略判断是否需要重启容器。但如果容器是因为执行 docker stop 或docker kill 退出，则不会自动重启。
+
+docker支持如下restart策略：
+
+- no – 容器退出时不要自动重启。这个是默认值。
+- on-failure[:max-retries] – 只在容器以非0状态码退出时重启。可选的，可以退出docker daemon尝试重启容器的次数。
+- always – 不管退出状态码是什么始终重启容器。当指定always时，docker daemon将无限次数地重启容器。容器也会在daemon启动时尝试重启容器，不管容器当时的状态如何。
+- unless-stopped – 不管退出状态码是什么始终重启容器。不过当daemon启动时，如果容器之前已经为停止状态，不启动它。
+
+在每次重启容器之前，不断地增加重启延迟（上一次重启的双倍延迟，从100毫秒开始），来防止影响服务器。这意味着daemon将等待100ms,然后200 ms, 400 ms, 800 ms, 1600 ms等等，直到超过on-failure限制，或执行docker stop或docker rm -f。
+
+如果容器重启成功（容器启动后并运行至少10秒），然后delay重置为默认的100ms。
+
+重启策略示例：
+```text
+docker run --restart=always 1695ed10e2cb # restart策略为always，使得容器退出时,docker将重启它。并且是无限制次数重启。
+docker run --restart=on-failure:10 redis #restart策略为on-failure,最大重启次数为10的次。容器以非0状态连续退出超过10次，docker将中断尝试重启这个容器。
+```
+可以通过docker inspect来查看已经尝试重启容器了多少次。例如，获取容器1695ed10e2cb的重启次数:
+```text
+docker inspect -f "{{ .RestartCount }}" 1695ed10e2cb
+```
+或者获取上一次容器重启时间：
+```
+docker inspect -f "{{ .State.StartedAt }}" 1695ed10e2cb
+```
+
 ## 总结
-本篇文章通过非常经典的 Python web应用作为案例，讲解了 Docker 容器使用的主要场景。包括构建镜像、启动镜像、分享镜像、在镜像中操作、在镜像中挂在宿主机目录以及对容器使用的资源进行限制。熟悉了这些操作，你也就基本上摸清了 Docker 容器的核心功能。
+本篇文章通过非常经典的 Python web应用作为案例，讲解了 Docker 容器使用的主要场景。包括构建镜像、启动镜像、分享镜像、在镜像中操作、在镜像中挂载宿主机目录、对容器使用的资源进行限制、管理容器的状态和如何保持容器始终运行。熟悉了这些操作，你也就基本上摸清了 Docker 容器的核心功能。
